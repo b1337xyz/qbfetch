@@ -18,5 +18,8 @@ config.source('qbfetch.py')
 config.bind('<Ctrl-h>', 'qbfetch')
 ```
 
+> **Warning**
+> This is a work in progress.
+
 ---
 Inspired by [qutefetch](https://github.com/Dou2ble/qutefetch)
