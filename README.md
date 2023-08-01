@@ -1,6 +1,8 @@
 # qbfetch
 Display information from qute://version in a "pleasant" way
 
+![preview](preview.jpg)
+
 ### Install
 ```
 curl -Ss https://raw.githubusercontent.com/b1337xyz/qbfetch/main/qbfetch.py -o ~/.config/qutebrowser/qbfetch.py
