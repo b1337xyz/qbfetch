@@ -6,16 +6,17 @@ Show version information in a "pleasant" way.
 ### Install
 ```
 curl -Ss https://raw.githubusercontent.com/b1337xyz/qbfetch/main/qbfetch.py -o ~/.config/qutebrowser/qbfetch.py
-# or
+```
+or
+```
 wget -q https://raw.githubusercontent.com/b1337xyz/qbfetch/main/qbfetch.py -O ~/.config/qutebrowser/qbfetch.py
 ```
 
 ```
-# ~/.config/qutebrowser/config.py
-config.source('qbfetch.py')
+echo "config.source('qbfetch.py')" >> ~/.config/qutebrowser/config.py
 
 # Optional
-config.bind('<Ctrl-h>', 'qbfetch')
+echo "config.bind('<Ctrl-h>', 'qbfetch')" >> ~/.config/qutebrowser/config.py
 ```
 
 > **Warning**
