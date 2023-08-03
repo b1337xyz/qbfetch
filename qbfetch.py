@@ -4,7 +4,11 @@ from qutebrowser.browser.qutescheme import add_handler
 from qutebrowser.utils import objreg, version as vs
 # from qutebrowser import __file__ as qtfile
 from qutebrowser import __version__ as qtver
-from PyQt5.QtCore import QUrl
+try:
+    from qutebrowser.qt.core import QUrl
+except ImportError:
+    from PyQt5.QtCore import QUrl
+
 # import traceback
 # import os
 
@@ -98,7 +102,7 @@ def qbfetch(_url: QUrl) -> None:
 
 @cmdutils.register()
 @cmdutils.argument('win_id', value=cmdutils.Value.win_id)
-def qbfetch(win_id: int):
+def qbfetch_handler(win_id: int):
     """ Show version information in a "pleasant" way. """
     url = QUrl('qute://qbfetch')
     tabbed_browser = objreg.get('tabbed-browser',
