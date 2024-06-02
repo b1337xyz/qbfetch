@@ -1,10 +1,4 @@
-# qbfetch
-Show version information in a "pleasant" way.
-
 ![preview](preview.jpg)
-
-> **Warning**
-> This is a work in progress.
 
 ### Install
 ```
